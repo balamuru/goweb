@@ -6,7 +6,7 @@ import (
 	// "time"
 
 	"github.com/gorilla/mux"
-	"utils"
+	"github.com/balamuru/goweb/pkg/utils"
 )
 
 func main() {
