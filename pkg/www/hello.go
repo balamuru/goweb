@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"time"
+	// "time"
 
 	"github.com/gorilla/mux"
+	"utils"
 )
 
 func main() {
@@ -20,8 +21,12 @@ func main() {
 	}).Methods("GET")
 
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "Hi " + time.Now().String())
+		
+		// fmt.Println()
+		// fmt.Fprintln(w, "Hi " + time.Now().String()time.Now().String())
+		fmt.Fprintln(w, "Under construction")
 		//do something ...
+		
 	}).Methods("GET")
 
 	http.ListenAndServe(":8080", r)
