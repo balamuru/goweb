@@ -21,6 +21,7 @@ func main() {
 
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "Hi " + time.Now().String())
+		//do something
 	}).Methods("GET")
 
 	http.ListenAndServe(":8080", r)
